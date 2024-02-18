@@ -1,6 +1,0 @@
-{
-  "routes": [
-    { "src": "/api/db", "dest": "/db.json" },
-    { "src": "/api/db/topics", "dest": "/db/topics.json" }
-  ]
-}
