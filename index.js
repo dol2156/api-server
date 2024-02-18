@@ -1,10 +1,10 @@
-var jsonServer = require('json-server')
-var server = jsonServer.create()
-var router = jsonServer.router('db.json')
-var middlewares = jsonServer.defaults()
+const jsonServer = require("json-server"); // importing json-server library
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3001
 
-server.use(middlewares)
-server.use(router)
-server.listen(8080, function () {
-  console.log('JSON Server is running')
-})
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
